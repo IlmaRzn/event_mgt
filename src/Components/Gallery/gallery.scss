@@ -1,0 +1,83 @@
+:root{
+    --PrimaryColor:hsl(240, 64%, 27%);
+    --HoverColor:hsl(219, 87%, 30%);
+    --whiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(0,0%,18%);
+    --textColor:hsl(240,1%,48%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --graybg:hsl(0,0%,96%);
+    --greyText:rgb(190,190,190);
+    --inputColor:hsl(330,12%,97%);
+}
+.gallery{
+    padding-top: 1rem;
+
+    .secContainer{
+        background-color: black;
+        .gallText{
+            h1{
+                color: var(--whiteColor);
+                padding-left: 35rem;
+                font-size: 50px;
+                font-weight: 500;
+            }
+        }
+        
+        .gallImage{
+            height: 50%;
+            width: 100%;
+            //position: relative;
+            background-repeat: no-repeat;
+            overflow: hidden;
+            .row{
+                .column{
+                    float: left;
+                    width: 25%;
+                    height: 25%;
+                    padding: 0px;
+                    flex: 50%;
+                
+            }
+            
+
+            
+           
+            }
+            .row::after{
+                content: "";
+                clear: both;
+                display: table;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                padding-right: 1rem;
+                
+                //padding: 0.6rem 1.5rem;
+                //margin-left: 3rem;
+                //margin-right: 3rem;
+                //margin-top: 2rem;
+             }
+
+             
+           
+           
+        }
+    }
+    
+   
+    
+    }
+    
+    @media screen and (min-width:480px) {
+        .gallery{
+            .secContainer{
+                .galleryCard{
+                    grid-template-columns: repeat(4,1fr);
+                }
+            }
+        }
+        
+    }
+    

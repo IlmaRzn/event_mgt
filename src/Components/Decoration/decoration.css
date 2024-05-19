@@ -1,0 +1,86 @@
+:root {
+  --PrimaryColor: hsl(240, 64%, 27%);
+  --HoverColor: hsl(219, 87%, 30%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --graybg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.decoration {
+  background-color: black;
+}
+.decoration .decorationContainer {
+  height: 100vh;
+}
+.decoration .decorationContainer .decorationText {
+  text-align: center;
+}
+.decoration .decorationContainer .decorationText .title {
+  color: var(--whiteColor);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  font-style: bold;
+}
+.decoration .decorationContainer .mainContent {
+  padding: 2rem;
+  gap: 1rem;
+}
+.decoration .decorationContainer .mainContent .decorationItem {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.045);
+}
+.decoration .decorationContainer .mainContent .decorationItem .destImage {
+  position: relative;
+}
+.decoration .decorationContainer .mainContent .decorationItem .destImage .description {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  color: var(--whiteColor);
+}
+.decoration .decorationContainer .mainContent .decorationItem .destImage .review {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  color: var(--whiteColor);
+}
+.decoration .decorationContainer .mainContent .decorationItem .destImage .price {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  color: var(--whiteColor);
+}
+.decoration .decorationContainer .mainContent .decorationItem .destImage .theme {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  color: var(--whiteColor);
+}
+.decoration .decorationContainer .mainContent .decorationItem .destImage .type {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+  color: var(--whiteColor);
+}
+.decoration .decorationContainer .mainContent .decorationItem .destImage img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=decoration.css.map */

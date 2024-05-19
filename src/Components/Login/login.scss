@@ -1,0 +1,113 @@
+:root{
+    --PrimaryColor:hsl(240, 64%, 27%);
+    --HoverColor:hsl(219, 87%, 30%);
+    --whiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(0,0%,18%);
+    --textColor:hsl(240,1%,48%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --graybg:hsl(0,0%,96%);
+    --greyText:rgb(190,190,190);
+    --inputColor:hsl(330,12%,97%);
+}
+.login-page{
+    height: 100vh;
+    background-image: linear-gradient(rgba(33,33,33,0.522)
+    ,rgba(33,33,33,0.522)), url('../../Assets/planner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+.nav{
+    font-size: 1.5rem;
+    color: var(--whiteColor);
+}
+
+.login{
+ 
+
+    .secContainer{
+
+        padding: 1rem;
+        .loginText{
+            text-align: center;
+
+        .title{
+            color: var(--whiteColor);
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 2.5rem;
+            }
+        }
+
+        .loginCard{
+            width: 100%;
+            border-radius: 1rem;
+            padding: 2rem;
+            background: var(--whiteColor);
+            //position: absolute;
+            gap: 1rem;
+            justify-content: center;
+            bottom: -35%;
+            transform: translateY(3%);
+            left: 50%;
+            box-shadow: 0 2px 8px 4px rgba(178,178,178,0.45);
+
+            .loginDiv{
+               width: 80%;
+                label{
+                    display:block;
+                    color: var(--textColor);
+                    font-weight: 500;
+                    font-size: 15px;
+                    padding-bottom: .2rem;
+                }
+                input{
+                    width: 100%;
+                    background: var(--inputColor);
+                    border-radius: 10px;
+                    border: none;
+                    padding: 5px;
+                    font-size: 13px;
+                    font-weight: 500;
+
+                    &::placeholder{
+                        font-size: 13px;
+                        opacity: .5;
+                        font-weight: 400;
+                        
+                    }
+                    &:focus{
+                        outline: none;
+                    }
+                    .btn{
+                        width: 100%;
+                        padding: .6rem 1.5rem;
+                        color: var(--whiteColor);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen  and (min-width: 556px){
+    .login{
+        .secContainer{
+            .loginCard{
+                bottom: -100px;
+                width: 90%;
+                grid-template-columns: repeat(1,1fr);
+
+            .btn{
+                transform: translateY(15px);
+            }
+
+        }
+    }
+    }
+}
+}

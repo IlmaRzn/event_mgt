@@ -1,0 +1,37 @@
+:root {
+  --PrimaryColor:hsl(240, 64%, 27%);
+  --HoverColor:hsl(219, 87%, 30%);
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(0,0%,18%);
+  --textColor:hsl(240,1%,48%);
+  --whiteColorDeam:hsl(0,0%,93%);
+  --graybg:hsl(0,0%,96%);
+  --greyText:rgb(190,190,190);
+  --inputColor:hsl(330,12%,97%);
+}
+
+.feedback {
+  height: 100vh;
+  background-image: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("../../Assets/d3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+.feedback .setContainer {
+  padding: 1rem;
+}
+.feedback .setContainer .feedbackText {
+  text-align: center;
+  size: 2rem;
+}
+.feedback .setContainer .feedbackText .title {
+  color: var(--whiteColor);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}/*# sourceMappingURL=feedback.css.map */

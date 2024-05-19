@@ -1,0 +1,88 @@
+:root {
+  --PrimaryColor:hsl(240, 64%, 27%);
+  --HoverColor:hsl(219, 87%, 30%);
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(0,0%,18%);
+  --textColor:hsl(240,1%,48%);
+  --whiteColorDeam:hsl(0,0%,93%);
+  --graybg:hsl(0,0%,96%);
+  --greyText:rgb(190,190,190);
+  --inputColor:hsl(330,12%,97%);
+}
+
+.event {
+  background-color: black;
+}
+.event .eventContainer {
+  height: 100vh;
+}
+.event .eventContainer .eventText {
+  text-align: center;
+}
+.event .eventContainer .eventText .title {
+  color: var(--whiteColor);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  font-style: bold;
+}
+.event .eventContainer .mainContent {
+  padding: 2rem;
+  gap: 1rem;
+}
+.event .eventContainer .mainContent .eventItem {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.045);
+}
+.event .eventContainer .mainContent .eventItem .destImage {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.event .eventContainer .mainContent .eventItem .destImage img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.event .eventContainer .mainContent .eventItem .destImage .overlayInfo {
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.846), rgba(0, 0, 0, 0.759));
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+}
+.event .eventContainer .mainContent .eventItem .destImage .overlayInfo h2 {
+  color: var(--whiteColor);
+  font-weight: 600;
+  left: 5px;
+}
+.event .eventContainer .mainContent .eventItem .destImage .overlayInfo .description {
+  color: var(--whiteColor);
+}
+.event .eventContainer .mainContent .eventItem .destImage .overlayInfo .icon {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  padding: 0.5rem;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  color: var(--whiteColor);
+  transition: 0.3s ease;
+}
+.event .eventContainer .mainContent .eventItem .destImage .overlayInfo .icon:hover {
+  background: var(--PrimaryColor);
+}
+.event .eventContainer .mainContent .eventItem:hover .overlayInfo {
+  overflow: visible;
+  padding: 1rem 1.5rem;
+  height: 100%;
+}/*# sourceMappingURL=event.css.map */

@@ -1,0 +1,70 @@
+:root {
+  --PrimaryColor:hsl(240, 64%, 27%);
+  --HoverColor:hsl(219, 87%, 30%);
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(0,0%,18%);
+  --textColor:hsl(240,1%,48%);
+  --whiteColorDeam:hsl(0,0%,93%);
+  --graybg:hsl(0,0%,96%);
+  --greyText:rgb(190,190,190);
+  --inputColor:hsl(330,12%,97%);
+}
+
+.footer {
+  background: var(--greyText);
+  padding: 2rem 0;
+}
+.footer .footContainer {
+  gap: 1.5rem;
+  text-align: center;
+}
+.footer .footContainer .social {
+  gap: 0.5rem;
+  margin: auto;
+  justify-content: center;
+}
+.footer .footContainer .social .icon {
+  font-size: 30px;
+  background: var(--whiteColor);
+  border-radius: 50%;
+  padding: 8px;
+}
+.footer .footContainer .social .icon:hover {
+  background: var(--textColor);
+}
+.footer .footContainer .footerLinks {
+  display: grid;
+  row-gap: 0.2rem;
+}
+.footer .footContainer .footerLinks .linkTitle {
+  padding-bottom: 0.5rem;
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.footer .footContainer .footerLinks li:hover {
+  transform: translateX(10px);
+}
+.footer .footContainer .footerLinks li:hover a {
+  color: var(--PrimaryColor);
+}
+.footer .footContainer .footerLinks a, .footer .footContainer .footerLinks .phone, .footer .footContainer .footerLinks .email, .footer .footContainer .footerLinks .address {
+  color: var(--textColor);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 448px) {
+  .footContainer {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    align-items: flex-start;
+  }
+  .footContainer .footerLinks {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 720px) {
+  .footContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}/*# sourceMappingURL=footer.css.map */

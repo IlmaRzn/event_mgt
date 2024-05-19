@@ -1,0 +1,95 @@
+:root {
+  --PrimaryColor:hsl(240, 64%, 27%);
+  --HoverColor:hsl(219, 87%, 30%);
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(0,0%,18%);
+  --textColor:hsl(240,1%,48%);
+  --whiteColorDeam:hsl(0,0%,93%);
+  --graybg:hsl(0,0%,96%);
+  --greyText:rgb(190,190,190);
+  --inputColor:hsl(330,12%,97%);
+}
+
+.reunion .reContainer {
+  height: 100vh;
+  background-image: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("../../Assets/btb6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  position: relative;
+}
+.reunion .reContainer .reText {
+  text-align: left;
+  width: 50%;
+}
+.reunion .reContainer .reText .title {
+  color: var(--whiteColor);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  padding-bottom: 20rem;
+  padding-left: 30rem;
+  font-style: bold;
+  display: bold;
+  justify-content: center;
+}
+.reunion .reContainer .reText .subtitle .icon {
+  color: var(--whiteColor);
+  font-size: 1rem;
+}
+.reunion .reContainer .reText .subtitle h3 {
+  color: var(--whiteColor);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.reunion .reContainer .reText .subtitle h2 {
+  color: var(--whiteColor);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.reunion .reContainer .reText .subtitle ul {
+  padding-left: 2rem;
+}
+.reunion .reContainer .reText .subtitle ul li {
+  color: var(--whiteColor);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.reunion .reContainer .reText .subtitle h1 {
+  color: var(--whiteColor);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.reunion .reContainer .mainContent {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 1rem;
+  padding-top: 5rem;
+  gap: 1rem;
+  padding-right: 1rem;
+}
+.reunion .reContainer .mainContent .destImage {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px 2px rgba(178, 178, 178, 0.045);
+}
+.reunion .reContainer .mainContent .destImage img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 480px) {
+  .reunion .reContainer .reunionCard {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}/*# sourceMappingURL=reunion.css.map */

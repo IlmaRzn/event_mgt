@@ -1,0 +1,73 @@
+/*color*/
+:root {
+  --PrimaryColor:hsl(240, 64%, 27%);
+  --HoverColor:hsl(219, 87%, 30%);
+  --whiteColor:hsl(0,0%,100%);
+  --blackColor:hsl(0,0%,18%);
+  --textColor:hsl(240,1%,48%);
+  --whiteColorDeam:hsl(0,0%,93%);
+  --graybg:hsl(0,0%,96%);
+  --greyText:rgb(190,190,190);
+  --inputColor:hsl(330,12%,97%);
+}
+
+.home {
+  height: 100vh;
+  background-image: linear-gradient(rgba(33, 33, 33, 0.522), rgba(33, 33, 33, 0.522)), url("../../Assets/planner1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+.home .secContainer .homeText {
+  text-align: center;
+}
+.home .secContainer .homeText .title {
+  color: var(--whiteColor);
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.home .secContainer .homeText .subTitle {
+  color: var(--whiteColor);
+  opacity: 0.9;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 1rem 0;
+  max-width: 70%;
+  text-align: center;
+  margin: auto;
+}
+.home .secContainer .homeText .btn {
+  padding: 0.6rem 1.5rem;
+  margin-left: 1.5rem;
+  margin-top: 5rem;
+}
+
+@media screen and (min-width: 480px) {
+  .home .secContainer .homeCard {
+    bottom: -25px;
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home .secContainer .homeCard .btn {
+    transform: translateY(15px);
+  }
+}
+@media screen and (min-width: 480px) {
+  .home .secContainer .homeText .title {
+    font-size: 2.5rem;
+  }
+  .home .secContainer .homeText .subTitle {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .home .secContainer .homeCard {
+    bottom: -10%;
+  }
+}/*# sourceMappingURL=home.css.map */
